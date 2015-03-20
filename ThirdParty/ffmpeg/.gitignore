@@ -3,3 +3,5 @@
 extra
 ios/build
 ios/ffmpeg-*
+android/build
+android/ffmpeg-*

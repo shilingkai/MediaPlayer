@@ -9,12 +9,14 @@ set -e
 function pull_fork()
 {
     echo "== pull ffmpeg fork $1 =="
-    rm -rf ios/ffmpeg-$1
-    cp -rf extra/ffmpeg ios/ffmpeg-$1
+    rm -rf android/ffmpeg-$1
+    cp -rf extra/ffmpeg android/ffmpeg-$1
 }
 
-pull_fork "armv7"
-pull_fork "armv7s"
-pull_fork "arm64"
-pull_fork "i386"
+pull_fork "armv5"
+pull_fork "armv7a"
+pull_fork "arm64-v8a"
+pull_fork "x86"
 pull_fork "x86_64"
+pull_fork "mips"
+pull_fork "mips64"
